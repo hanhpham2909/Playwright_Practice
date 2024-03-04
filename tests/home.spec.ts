@@ -1,5 +1,5 @@
 import { test, expect } from "@playwright/test";
-
+import { defineConfig } from "@playwright/test";
 test.describe('Home',() => {
     test('Open Homepage and verify Title ', async ({ page })  => {
         await page.goto('https://practice.sdetunicorns.com/about/');
@@ -38,7 +38,7 @@ test.describe('Home',() => {
     test('Verify text of all nav header', async ({ page })  => {
         await page.goto('https://practice.sdetunicorns.com');
         const expectLinks = [
-            "Home" ,
+            "Homes" ,
             "About" ,
             "Shop" ,
             "Blog",     
