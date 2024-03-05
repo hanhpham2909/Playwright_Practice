@@ -46,6 +46,6 @@ test.describe('Home',() => {
             "My account" ,
         ]
         const actualLinks =  page.locator('#zak-primary-menu li[id*=menu]');
-         expect(await actualLinks.allTextContents()).toEqual(expectLinks);
+         expect( actualLinks.allTextContents()).toEqual(expectLinks);
     })
 })
