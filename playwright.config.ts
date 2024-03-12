@@ -22,12 +22,17 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: 'html',
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  
+  globalSetup: require.resolve('./utils/global-setup'), 
+  // CHỉ định một file cụ thể được sử dụng cho việc thiết lập toàn cục trước khi chạy các bài kiểm tra. Trong file này, bạn thường sẽ thực hiện các công việc chuẩn bị môi trường toàn cục như khởi tạo trình duyệt, đăng nhập và lưu trạng thái đăn nhập 
+  
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
-    // baseURL: 'http://127.0.0.1:3000',
+  baseURL: 'https://practice.sdetunicorns.com',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    storageState: 'loggedInState.json'
   },
 
   /* Configure projects for major browsers */

@@ -1,5 +1,6 @@
 import {test, expect} from '@playwright/test';
-import { describe } from 'node:test';
+import { faker } from '@faker-js/faker';
+import { ContactPage } from '../page/contact.page';
 
 /* Before watching video 
 test ('contact page', async ({page}) => {
@@ -19,20 +20,29 @@ test ('contact page', async ({page}) => {
     const sucessMess = await page.locator('data-id=ef894a0');
     await expect(sucessMess).toContainText("Thanks for contacting us! We will be in touch with you shortly");
 })*/
+    const randomName = faker.person.fullName();
+    const randomEmail = faker.internet.email();
+    const randomPhone = faker.phone.number();
+    const randomMess = faker.lorem.paragraphs(3);
 
+
+
+let contactPage :ContactPage
 test( 'Verify message contact page', async ({page}) => {
+     contactPage = new ContactPage(page);
+   
     // Go to contact page 
-    await page.goto('https://practice.sdetunicorns.com/');
-    await page.locator('#menu-item-493').click();
+    await contactPage.navigate();
+    await contactPage.contactBtn.click();
     //fill the form
-    await page.locator('.contact-name input ').fill("luna");
-    await page.locator('.contact-email input ').fill("phuclong@mailinator.com");
-    await page.locator('.contact-phone input ').fill("01111111111");
-    await page.locator('.contact-message textarea ').fill("Have a nice day");
+    await contactPage.nameInput.fill(randomName);
+    await contactPage.emailInput.fill(randomEmail);
+    await contactPage.phoneInput.fill(randomPhone);
+    await contactPage.messInput.fill(randomMess);
 
     // Click button submit
-    await page.locator('button[type=submit]').click();
+    await contactPage.submitBtn.click();
     //Verify message
-    await expect( page.locator('div[role=alert]')).toHaveText("Thanks for contacting us! We will be in touch with you shortly")
+    await expect( contactPage.successTxt).toHaveText("Thanks for contacting us! We will be in touch with you shortly")
    
 });

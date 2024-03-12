@@ -1,5 +1,4 @@
 import { test, expect } from "@playwright/test";
-import { defineConfig } from "@playwright/test";
 test.describe('Home',() => {
     test('Open Homepage and verify Title ', async ({ page })  => {
         await page.goto('https://practice.sdetunicorns.com/about/');
@@ -46,6 +45,6 @@ test.describe('Home',() => {
             "My account" ,
         ]
         const actualLinks =  page.locator('#zak-primary-menu li[id*=menu]');
-         expect( actualLinks.allTextContents()).toEqual(expectLinks);
+         expect( await actualLinks.allTextContents()).toEqual(expectLinks);
     })
 })
