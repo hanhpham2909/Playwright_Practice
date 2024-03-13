@@ -1,6 +1,7 @@
 Web Practice: https://practice.sdetunicorns.com/blog/
 Udemy Course: Playwright - Complete Beginner Course 2024 (UI + API)
 GitHub Repo: https://github.com/dilpreetj/playwright-course/blob/base-project/tests/blog.spec.ts
+Report Test results: using Allure (but just see in local)
 
 /blog.spec.ts 
 Access blog page
