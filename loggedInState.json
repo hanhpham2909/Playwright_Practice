@@ -1,20 +1,8 @@
-/* 
-- Name : Tên cookie
-- Value : Giá trị của cookie
-- Domain : Miền của cookie
-- Path : Đường dẫn của cookie
-- expires : Thời điểm hết hạn của cookie và không còn được sử dụng
-- httpOnly: boolean
- -- Ý nghĩa: Cho biết liệu cookie chỉ được gửi qua kết nối an toàn (HTTPS) hay không.
- -- True : chỉ có server có thể truy cập cookie, giảm rủi ro bị tấn công
-- sameSite: Ý nghĩa: Xác định cách cookie được gửi kèm với các yêu cầu từ trình duyệt.
-Tác dụng: Giúp ngăn chặn một số tấn công Cross-Site Request Forgery (CSRF) bằng cách xác định liệu cookie có được gửi kèm với các yêu cầu từ trình duyệt không an toàn hay không.
-*/
 {
   "cookies": [
     {
       "name": "wordpress_sec_bcee46caf8128c4169fb42a56c1b36e7",
-      "value": "hanh%7C1710403486%7CSe1QscdxqNAvvkgAU7qwvr5IKC7QXfglFUofLTceO2F%7Ce19077d3ad314eb6d6eefb58e66debe764295bf64a36993b8d0a7650a89574dc",
+      "value": "hanh%7C1710492840%7CEMeeAjolHvwxDmnl4SL2Ps8odxK1Q1iRifcnqRu1tnh%7Cb32843994239196b0c9be8bad251edd98b8b480938b04a73bb341a5748549faf",
       "domain": "practice.sdetunicorns.com",
       "path": "/wp-content/plugins",
       "expires": -1,
@@ -24,7 +12,7 @@ Tác dụng: Giúp ngăn chặn một số tấn công Cross-Site Request Forger
     },
     {
       "name": "wordpress_sec_bcee46caf8128c4169fb42a56c1b36e7",
-      "value": "hanh%7C1710403486%7CSe1QscdxqNAvvkgAU7qwvr5IKC7QXfglFUofLTceO2F%7Ce19077d3ad314eb6d6eefb58e66debe764295bf64a36993b8d0a7650a89574dc",
+      "value": "hanh%7C1710492840%7CEMeeAjolHvwxDmnl4SL2Ps8odxK1Q1iRifcnqRu1tnh%7Cb32843994239196b0c9be8bad251edd98b8b480938b04a73bb341a5748549faf",
       "domain": "practice.sdetunicorns.com",
       "path": "/wp-admin",
       "expires": -1,
@@ -34,10 +22,10 @@ Tác dụng: Giúp ngăn chặn một số tấn công Cross-Site Request Forger
     },
     {
       "name": "wp_wpfileupload_bcee46caf8128c4169fb42a56c1b36e7",
-      "value": "2rNjZ659k1d9SCh5Rg6qMPt5NFDLTR45",
+      "value": "FRajhpKqHpTd1wfjgZ2d79YQWCLqRX9m",
       "domain": "practice.sdetunicorns.com",
       "path": "/",
-      "expires": 1710403483.279994,
+      "expires": 1710492835.987573,
       "httpOnly": false,
       "secure": true,
       "sameSite": "Lax"
@@ -54,7 +42,7 @@ Tác dụng: Giúp ngăn chặn một số tấn công Cross-Site Request Forger
     },
     {
       "name": "sbjs_current_add",
-      "value": "fd%3D2024-03-12%2008%3A04%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fpractice.sdetunicorns.com%2Fmy-account%2F%7C%7C%7Crf%3D%28none%29",
+      "value": "fd%3D2024-03-13%2008%3A53%3A57%7C%7C%7Cep%3Dhttps%3A%2F%2Fpractice.sdetunicorns.com%2Fmy-account%2F%7C%7C%7Crf%3D%28none%29",
       "domain": ".practice.sdetunicorns.com",
       "path": "/",
       "expires": -1,
@@ -64,7 +52,7 @@ Tác dụng: Giúp ngăn chặn một số tấn công Cross-Site Request Forger
     },
     {
       "name": "sbjs_first_add",
-      "value": "fd%3D2024-03-12%2008%3A04%3A44%7C%7C%7Cep%3Dhttps%3A%2F%2Fpractice.sdetunicorns.com%2Fmy-account%2F%7C%7C%7Crf%3D%28none%29",
+      "value": "fd%3D2024-03-13%2008%3A53%3A57%7C%7C%7Cep%3Dhttps%3A%2F%2Fpractice.sdetunicorns.com%2Fmy-account%2F%7C%7C%7Crf%3D%28none%29",
       "domain": ".practice.sdetunicorns.com",
       "path": "/",
       "expires": -1,
@@ -94,7 +82,7 @@ Tác dụng: Giúp ngăn chặn một số tấn công Cross-Site Request Forger
     },
     {
       "name": "sbjs_udata",
-      "value": "vst%3D1%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome%2F121.0.6167.57%20Safari%2F537.36",
+      "value": "vst%3D1%7C%7C%7Cuip%3D%28none%29%7C%7C%7Cuag%3DMozilla%2F5.0%20%28Windows%20NT%2010.0%3B%20Win64%3B%20x64%29%20AppleWebKit%2F537.36%20%28KHTML%2C%20like%20Gecko%29%20HeadlessChrome%2F123.0.6312.4%20Safari%2F537.36",
       "domain": ".practice.sdetunicorns.com",
       "path": "/",
       "expires": -1,
@@ -107,7 +95,7 @@ Tác dụng: Giúp ngăn chặn một số tấn công Cross-Site Request Forger
       "value": "pgs%3D1%7C%7C%7Ccpg%3Dhttps%3A%2F%2Fpractice.sdetunicorns.com%2Fmy-account%2F",
       "domain": ".practice.sdetunicorns.com",
       "path": "/",
-      "expires": 1710232484,
+      "expires": 1710321837,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -117,7 +105,7 @@ Tác dụng: Giúp ngăn chặn một số tấn công Cross-Site Request Forger
       "value": "%22%22",
       "domain": ".sdetunicorns.com",
       "path": "/",
-      "expires": 1744790684.827238,
+      "expires": 1744880037.620683,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -127,7 +115,7 @@ Tác dụng: Giúp ngăn chặn một số tấn công Cross-Site Request Forger
       "value": "%22%22",
       "domain": ".sdetunicorns.com",
       "path": "/",
-      "expires": 1710489884,
+      "expires": 1710579237,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
@@ -137,14 +125,14 @@ Tác dụng: Giúp ngăn chặn một số tấn công Cross-Site Request Forger
       "value": "%22%22",
       "domain": ".sdetunicorns.com",
       "path": "/",
-      "expires": 1741766684,
+      "expires": 1741856037,
       "httpOnly": false,
       "secure": false,
       "sameSite": "Lax"
     },
     {
       "name": "wordpress_logged_in_bcee46caf8128c4169fb42a56c1b36e7",
-      "value": "hanh%7C1710403486%7CSe1QscdxqNAvvkgAU7qwvr5IKC7QXfglFUofLTceO2F%7Cc8110e121457c51742e3927359f0056cd47a1467ef6f0ea2cb835c16f01ee0f6",
+      "value": "hanh%7C1710492840%7CEMeeAjolHvwxDmnl4SL2Ps8odxK1Q1iRifcnqRu1tnh%7C4295b22e4ea7e08a754e649696cdd248023d6a8f08222714c7d3b6beea590053",
       "domain": "practice.sdetunicorns.com",
       "path": "/",
       "expires": -1,
